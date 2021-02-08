@@ -23,9 +23,6 @@ function preload() {
 
 //Function for setting up.
 function setup() {
-  //Looping the background music.
-  bgm.loop();
-
   //Creating the canvas area.
   createCanvas(1350, 700);
 
@@ -177,6 +174,8 @@ function draw() {
       bgm.setVolume(0.1);
       //Playing bgm.
       bgm.play();
+      //Looping the background music.
+      bgm.loop();
       //Destroying sprite3.
       sprite3.destroy();
     }
